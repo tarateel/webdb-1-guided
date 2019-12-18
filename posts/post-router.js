@@ -79,7 +79,7 @@ async function validatePostId(req, res, next) {
 		if (post) {
 			next()
 		} else {
-			res.status(404).json({ message: "Post not fonud" })
+			res.status(404).json({ message: "Post not found" })
 		}
 	} catch (err) {
 		next(err)
